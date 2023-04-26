@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Resposive extends StatefulWidget {
+  final mymobileScreen;
+
   const Resposive({super.key});
 
   @override
