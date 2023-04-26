@@ -11,7 +11,9 @@ class _mobileScreenState extends State<mobileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: ,
+      ),
     );
   }
 }
