@@ -16,9 +16,9 @@ class _ResposiveState extends State<Resposive> {
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (buildContext, boxConstraints) {
       if (boxConstraints.maxWidth > 600) {
-        return;
+        return widget.mywebScreen;
       } else {
-        return;
+        return widget.mymobileScreen;
       }
     });
   }
