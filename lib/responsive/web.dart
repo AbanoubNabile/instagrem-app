@@ -11,7 +11,9 @@ class _webScereenState extends State<webScereen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: ,
+      ),
     );
   }
 }
