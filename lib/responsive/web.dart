@@ -12,7 +12,7 @@ class _webScereenState extends State<webScereen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: ,
+        title: Text("web screen"),
       ),
     );
   }
