@@ -10,6 +10,6 @@ class mobileScreen extends StatefulWidget {
 class _mobileScreenState extends State<mobileScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
