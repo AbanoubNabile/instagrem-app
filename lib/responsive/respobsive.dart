@@ -4,7 +4,8 @@ class Resposive extends StatefulWidget {
   final mymobileScreen;
   final mywebScreen;
 
-  const Resposive({super.key, this.mymobileScreen, this.mywebScreen});
+  const Resposive(
+      {super.key, required this.mymobileScreen, required this.mywebScreen});
 
   @override
   State<Resposive> createState() => _ResposiveState();
