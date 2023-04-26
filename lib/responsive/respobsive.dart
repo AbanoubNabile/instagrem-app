@@ -10,6 +10,12 @@ class Resposive extends StatefulWidget {
 class _ResposiveState extends State<Resposive> {
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(builder: (buildContext, boxConstraints) {});
+    return LayoutBuilder(builder: (buildContext, boxConstraints) {
+      if (boxConstraints.maxWidth > 600) {
+        return;
+      } else {
+        return;
+      }
+    });
   }
 }
