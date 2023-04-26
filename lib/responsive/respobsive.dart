@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class Resposive extends StatefulWidget {
   final mymobileScreen;
+  final mywebScreen;
 
   const Resposive({super.key});
 
