@@ -14,10 +14,11 @@ class _homeState extends State<home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+          backgroundColor: mobileBackgroundColor,
           title: SvgPicture.asset(
-        "assets/img/instagram.svg",
-        color: primaryColor,
-      )),
+            "assets/img/instagram.svg",
+            color: primaryColor,
+          )),
     );
   }
 }
