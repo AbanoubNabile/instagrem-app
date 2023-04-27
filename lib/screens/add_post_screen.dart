@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
-  const Home({super.key});
+class add_post extends StatefulWidget {
+  const add_post({super.key});
 
+  @override
+  State<add_post> createState() => _add_postState();
+}
+
+class _add_postState extends State<add_post> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
