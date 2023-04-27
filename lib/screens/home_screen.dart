@@ -18,6 +18,7 @@ class _homeState extends State<home> {
           title: SvgPicture.asset(
             "assets/img/instagram.svg",
             color: primaryColor,
+            height: 32,
           )),
     );
   }
