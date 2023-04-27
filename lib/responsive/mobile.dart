@@ -19,9 +19,6 @@ class _mobileScreenState extends State<mobileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("mobile screen"),
-      ),
       bottomNavigationBar: CupertinoTabBar(
         backgroundColor: mobileBackgroundColor,
         onTap: (index) {
