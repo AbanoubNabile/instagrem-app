@@ -11,12 +11,14 @@ class _mobileScreenState extends State<mobileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("mobile screen"),
-      ),
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: "home")
-      ]),
-    );
+        appBar: AppBar(
+          title: Text("mobile screen"),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "home")
+          ],
+        ));
   }
 }
