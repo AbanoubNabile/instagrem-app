@@ -24,7 +24,12 @@ class _mobileScreenState extends State<mobileScreen> {
                   color: primaryColor,
                 ),
                 label: "home"),
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: "home")
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.home,
+                  color: secondaryColor,
+                ),
+                label: "home")
           ],
         ));
   }
