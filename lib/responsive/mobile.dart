@@ -17,6 +17,7 @@ class _mobileScreenState extends State<mobileScreen> {
           title: Text("mobile screen"),
         ),
         bottomNavigationBar: CupertinoTabBar(
+          backgroundColor: mobileBackgroundColor,
           items: [
             BottomNavigationBarItem(
                 icon: Icon(
