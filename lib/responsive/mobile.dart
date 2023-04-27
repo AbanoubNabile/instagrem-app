@@ -1,5 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:instagram_app/screens/add_post_screen.dart';
+import 'package:instagram_app/screens/home_screen.dart';
+import 'package:instagram_app/screens/profile.dart';
+import 'package:instagram_app/screens/search_screen.dart';
 import 'package:instagram_app/shared/colors.dart';
 
 class mobileScreen extends StatefulWidget {
@@ -10,6 +14,8 @@ class mobileScreen extends StatefulWidget {
 }
 
 class _mobileScreenState extends State<mobileScreen> {
+  final PageController _pageController = PageController();
+  int curretpage = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,12 +24,14 @@ class _mobileScreenState extends State<mobileScreen> {
       ),
       bottomNavigationBar: CupertinoTabBar(
         backgroundColor: mobileBackgroundColor,
-        onTap: (index) {},
+        onTap: (index) {
+          _pageController.jumpToPage(index);
+        },
         items: [
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
-                color: primaryColor,
+                color: curretpage == 0 ? primaryColor : secondaryColor,
               ),
               label: ""),
           BottomNavigationBarItem(
@@ -55,8 +63,16 @@ class _mobileScreenState extends State<mobileScreen> {
       body: PageView(
         onPageChanged: (index) {},
         physics: NeverScrollableScrollPhysics(),
-        // controller: _pageController,
-        children: [],
+        controller: _pageController,
+        children: [
+          home(),
+          search(),
+          add_post(),
+          Center(
+            child: Text("love u "),
+          ),
+          profile(),
+        ],
       ),
     );
   }
