@@ -13,43 +13,51 @@ class _mobileScreenState extends State<mobileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text("mobile screen"),
-        ),
-        bottomNavigationBar: CupertinoTabBar(
-          backgroundColor: mobileBackgroundColor,
-          items: [
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.home,
-                  color: primaryColor,
-                ),
-                label: ""),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.search,
-                  color: primaryColor,
-                ),
-                label: ""),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.add_circle,
-                  color: primaryColor,
-                ),
-                label: ""),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.favorite,
-                  color: primaryColor,
-                ),
-                label: ""),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.person,
-                  color: primaryColor,
-                ),
-                label: ""),
-          ],
-        ));
+      appBar: AppBar(
+        title: Text("mobile screen"),
+      ),
+      bottomNavigationBar: CupertinoTabBar(
+        backgroundColor: mobileBackgroundColor,
+        onTap: (index) {},
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home,
+                color: primaryColor,
+              ),
+              label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.search,
+                color: primaryColor,
+              ),
+              label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.add_circle,
+                color: primaryColor,
+              ),
+              label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.favorite,
+                color: primaryColor,
+              ),
+              label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+                color: primaryColor,
+              ),
+              label: ""),
+        ],
+      ),
+      body: PageView(
+        onPageChanged: (index) {},
+        physics: NeverScrollableScrollPhysics(),
+        // controller: _pageController,
+        children: [],
+      ),
+    );
   }
 }
