@@ -3,7 +3,7 @@ import 'package:instagram_app/responsive/mobile.dart';
 import 'package:instagram_app/responsive/respobsive.dart';
 import 'package:instagram_app/responsive/web.dart';
 
-import 'screens/Home.dart';
+import 'Home.dart';
 
 void main() {
   runApp(const MyApp());
