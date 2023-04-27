@@ -35,7 +35,13 @@ class _mobileScreenState extends State<mobileScreen> {
                   Icons.add_circle,
                   color: primaryColor,
                 ),
-                label: "home"),
+                label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.favorite,
+                  color: primaryColor,
+                ),
+                label: ""),
           ],
         ));
   }
