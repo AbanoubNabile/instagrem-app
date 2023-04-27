@@ -24,6 +24,14 @@ class _mobileScreenState extends State<mobileScreen> {
                   color: primaryColor,
                 ),
                 label: "home"),
+                 BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.search,
+                  color: primaryColor,
+                ),
+            
+                
+            
           ],
         ));
   }
